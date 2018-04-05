@@ -21,7 +21,10 @@ app = Flask(__name__)
 
 routes = [
     MainRoute(),
-    Add()
+    Add(),
+    Division(),
+    Product(),
+    Decrease()
 ]
 
 for route in routes:

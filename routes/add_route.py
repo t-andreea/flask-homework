@@ -7,19 +7,16 @@ from routes.main_route import MainRoute
 class Add(MainRoute):
 
     def __init__(self):
-        pass
+        super().__init__()
 
-    def _generate_response(self, input_data):
-        super()._generate_response(input_data=input_data)
+    def _generate_response(self, input_data=None):
+        return super()._generate_response(input_data)
 
     def post(self):
-        a = request.form['nr1']
-        b = request.form['nr2']
-        a = int(a)
-        b = int(b)
+        a = int(request.form['nr1'])
+        b = int(request.form['nr2'])
         s = AddOperate(a, b)
-        input_data = s.add()
-        return input_data
+        return self._generate_response(s.add())
 
     def get_route(self):
         return '/add'

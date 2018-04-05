@@ -6,7 +6,7 @@ class DecreaseOperate(Numbers):
         super().__init__(a, b)
 
     def decrease(self):
-        if self.a > self.b:
-            return self.a - self.b
+        if self._a > self._b:
+            return self._a - self._b
         else:
-            return self.b - self.a
+            return self._b - self._a

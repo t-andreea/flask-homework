@@ -5,4 +5,4 @@ class AddOperate(Numbers):
         super().__init__(a, b)
 
     def add(self):
-        return self.a + self.b
+        return self._a + self._b

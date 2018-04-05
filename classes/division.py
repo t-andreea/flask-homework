@@ -6,7 +6,7 @@ class DivisionOperate(Numbers):
         super().__init__(a, b)
 
     def division(self):
-        if self.a == 0:
+        if self._a == 0:
             return 0
         else:
-            return self.a/self.b
+            return self._a/self._b

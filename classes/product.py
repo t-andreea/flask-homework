@@ -6,4 +6,4 @@ class ProductOperate(Numbers):
         super().__init__(a, b)
 
     def product(self):
-        return self.a*self.b
+        return self._a*self._b

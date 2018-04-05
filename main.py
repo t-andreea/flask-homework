@@ -1,21 +1,11 @@
 from flask import Flask
 
-from classes.add import AddOperate
-from classes.decrease import DecreaseOperate
-from classes.division import DivisionOperate
-from classes.product import ProductOperate
-
-# sum = AddOperate(3,5)
-# dif = DecreaseOperate(7,5)
-# prod = ProductOperate(3,5)
-# div = DivisionOperate(5,7)
-#
-# print(sum.add())
-# print(dif.decrease())
-# print(prod.product())
-# print(div.division())
 from routes.add_route import Add
+from routes.decrease_route import Decrease
+from routes.division_route import Division
 from routes.main_route import MainRoute
+from routes.product_route import Product
+
 
 app = Flask(__name__)
 
